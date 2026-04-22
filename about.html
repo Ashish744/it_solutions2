@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Stackly</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (SAME AS HOME) -->
+<section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="ChatGPT Image Apr 21, 2026, 11_18_42 AM.png"></a>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+   <h1>About Us</h1>
+
+ 
+</section>
+
+
+<!-- ABOUT CONTENT -->
+ <!-- STATS SECTION -->
+<section class="about-stats-section">
+  <div class="container stats-grid">
+    
+
+    <div class="stat-box">
+      <h2 class="counter" data-target="300">0</h2>
+      <p>Employees</p>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="counter" data-target="5">0</h2>
+      <p>States Covered</p>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="counter" data-target="100">0</h2>
+      <p>Projects Completed</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="team-section">
+  <h2>Our Leadership</h2>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <img src="https://picsum.photos/200" alt="">
+      <h3>John Doe</h3>
+      <p>CEO</p>
+    </div>
+
+    <div class="team-card">
+      <img src="https://picsum.photos/201" alt="">
+      <h3>Jane Smith</h3>
+      <p>CTO</p>
+    </div>
+
+    <div class="team-card">
+      <img src="https://picsum.photos/202" alt="">
+      <h3>David Lee</h3>
+      <p>Project Manager</p>
+    </div>
+
+  </div>
+</section>
+<!-- PREMIUM LIFE AT STACKLY -->
+<section class="life-section">
+  <div class="container">
+
+    <h2 class="animate">Life at Stackly</h2>
+    <p class="life-subtext animate">
+      A culture built on innovation, teamwork, and growth. Here's a glimpse of our everyday life.
+    </p>
+
+    <div class="life-gallery">
+
+      <div class="life-card animate">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" onclick="openLightbox(this)">
+        <div class="overlay">
+          <h3>Team Collaboration</h3>
+        </div>
+      </div>
+
+      <div class="life-card animate">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" onclick="openLightbox(this)">
+        <div class="overlay">
+          <h3>Brainstorming</h3>
+        </div>
+      </div>
+
+      <div class="life-card animate">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" onclick="openLightbox(this)">
+        <div class="overlay">
+          <h3>Work Culture</h3>
+        </div>
+      </div>
+
+      <div class="life-card animate">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" onclick="openLightbox(this)">
+        <div class="overlay">
+          <h3>Team Activities</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span onclick="closeLightbox()">×</span>
+  <img id="lightbox-img">
+</div>
+
+
+<!-- FOOTER -->
+<section class="footer">
+  <p>© 2026 Stackly. All Rights Reserved.</p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

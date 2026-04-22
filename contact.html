@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Stackly</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section class="sub-header">
+  <nav>
+    <a href="index.html">
+      <img src="ChatGPT Image Apr 21, 2026, 11_18_42 AM.png">
+    </a>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Contact Us</h1>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-modern">
+  <div class="container contact-grid">
+
+    <!-- LEFT SIDE (MAP) -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps?q=India&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right animate" >
+
+      <!-- INFO CARDS -->
+      <div class="contact-cards animate">
+
+        <div class="info-card animate">
+          <i class="fas fa-envelope "></i>
+          <p>info@stackly.com</p>
+        </div>
+
+        <div class="info-card animate">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Bangalore, India</p>
+        </div>
+
+      </div>
+
+      <!-- FORM TITLE -->
+      <h2>Please take a moment to fill out the form</h2>
+
+      <!-- FORM -->
+      <form id="contactForm" class="modern-form animate">
+
+        <div class="form-left">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="subject" placeholder="Subject">
+        </div>
+
+        <div class="form-right">
+          <textarea id="message" placeholder="Message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message Now</button>
+
+      </form>
+
+      <p id="successMsg"></p>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
