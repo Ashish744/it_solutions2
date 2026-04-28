@@ -6,16 +6,382 @@
   <title>Blog - Stackly</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 </head>
 
 <body>
 
-<section class="empty-blog">
-  <h2>This page is empty</h2>
-  <p>We are working on something amazing. Stay tuned!</p>
+<nav>
+  <a href="index.html"><img src="logo.png" alt="Stackly logo"></a>
 
-  <a href="index.html" class="home-btn">Return Home</a>
+  <div class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Stackly Blog</h1>
+    <p>Insights, innovations, and stories from the world of technology</p>
+  </div>
 </section>
+
+<!-- BLOG CATEGORIES -->
+<section class="blog-categories">
+  <div class="container">
+    <div class="category-tabs">
+      <button class="tab-btn active" data-category="all">All Posts</button>
+      <button class="tab-btn" data-category="company">Company News</button>
+      <button class="tab-btn" data-category="tech">Tech Insights</button>
+      <button class="tab-btn" data-category="careers">Careers</button>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG POSTS -->
+<section class="blog-posts">
+  <div class="container">
+
+    <!-- Featured Post -->
+    <div class="featured-post" data-category="company">
+      <div class="featured-content">
+        <div class="featured-meta">
+          <span class="featured-tag">Featured</span>
+          <span class="featured-date">April 23, 2026</span>
+        </div>
+        <h2>Stackly's Journey: From Startup to Tech Leader</h2>
+        <p>Discover how Stackly transformed from a small team of passionate developers into a leading IT solutions provider, revolutionizing digital experiences for businesses worldwide.</p>
+        <div class="featured-stats">
+          <span><i class="fas fa-eye"></i> 2.5K views</span>
+          <span><i class="fas fa-heart"></i> 156 likes</span>
+          <span><i class="fas fa-share"></i> 23 shares</span>
+        </div>
+      </div>
+      <div class="featured-image">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Stackly team collaboration">
+      </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid">
+
+      <!-- Post 1 -->
+      <article class="blog-card" data-category="tech">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400" alt="Cloud computing">
+          <div class="blog-category">Tech Insights</div>
+        </div>
+        <div class="blog-content">
+          <h3>The Future of Cloud Integration</h3>
+          <p>How Stackly is pioneering next-generation cloud solutions that seamlessly connect businesses across platforms.</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> April 20, 2026</span>
+            <span><i class="fas fa-user"></i> Tech Team</span>
+          </div>
+          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card" data-category="company">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400" alt="Team meeting">
+          <div class="blog-category">Company News</div>
+        </div>
+        <div class="blog-content">
+          <h3>Expanding Our Reach: 5 New States</h3>
+          <p>Stackly announces expansion to cover 5 additional states, bringing our innovative IT solutions closer to more businesses.</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> April 18, 2026</span>
+            <span><i class="fas fa-user"></i> Marketing</span>
+          </div>
+          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card" data-category="careers">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400" alt="Career growth">
+          <div class="blog-category">Careers</div>
+        </div>
+        <div class="blog-content">
+          <h3>Career Growth at Stackly</h3>
+          <p>Explore the opportunities for professional development and career advancement within our innovative tech environment.</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> April 15, 2026</span>
+            <span><i class="fas fa-user"></i> HR Team</span>
+          </div>
+          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="blog-card" data-category="tech">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Web development">
+          <div class="blog-category">Tech Insights</div>
+        </div>
+        <div class="blog-content">
+          <h3>Modern Web Development Trends</h3>
+          <p>Stay ahead of the curve with Stackly's insights on the latest web development technologies and best practices.</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> April 12, 2026</span>
+            <span><i class="fas fa-user"></i> Dev Team</span>
+          </div>
+          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="blog-card" data-category="company">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=400" alt="Project completion">
+          <div class="blog-category">Company News</div>
+        </div>
+        <div class="blog-content">
+          <h3>Milestone: 500 Projects Completed</h3>
+          <p>Celebrating our 500th project milestone and the impact we've made on businesses through innovative IT solutions.</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> April 10, 2026</span>
+            <span><i class="fas fa-user"></i> Operations</span>
+          </div>
+          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="blog-card" data-category="careers">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400" alt="Company culture">
+          <div class="blog-category">Careers</div>
+        </div>
+        <div class="blog-content">
+          <h3>Life at Stackly: Work-Life Balance</h3>
+          <p>Discover how we maintain a healthy work-life balance while fostering innovation and collaboration in our team.</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> April 8, 2026</span>
+            <span><i class="fas fa-user"></i> Culture Team</span>
+          </div>
+          <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Load More Button -->
+    <div class="load-more-container">
+      <button class="load-more-btn">
+        <span>Load More Posts</span>
+        <i class="fas fa-spinner loading-icon"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter for the latest insights, company news, and tech trends.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div>
+      <div class="newsletter-features">
+        <div class="feature">
+          <i class="fas fa-newspaper"></i>
+          <span>Weekly Updates</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-lightbulb"></i>
+          <span>Tech Insights</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-users"></i>
+          <span>Company News</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What services does Stackly offer?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Stackly specializes in web development, software engineering, cloud integration, and comprehensive IT solutions designed to transform your business digitally.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>How many states does Stackly cover?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We currently serve clients across 5 states and are continuously expanding our reach to provide our innovative IT solutions to more businesses nationwide.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What makes Stackly different?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Our commitment to innovation, user-friendly experiences, and seamless performance sets us apart. We focus on turning ideas into powerful digital solutions that drive real business results.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Does Stackly offer career opportunities?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! We're always looking for talented individuals passionate about technology. Check our careers section for current openings and opportunities to grow with our innovative team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Tab functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const blogCards = document.querySelectorAll('.blog-card');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      tabBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      btn.classList.add('active');
+
+      const category = btn.dataset.category;
+
+      blogCards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+          card.style.animation = 'fadeInUp 0.5s ease forwards';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const faqItem = question.parentElement;
+      const answer = faqItem.querySelector('.faq-answer');
+      const icon = question.querySelector('i');
+
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-answer').style.maxHeight = null;
+          item.querySelector('i').style.transform = 'rotate(0deg)';
+        }
+      });
+
+      // Toggle current FAQ
+      faqItem.classList.toggle('active');
+
+      if (faqItem.classList.contains('active')) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        answer.style.maxHeight = null;
+        icon.style.transform = 'rotate(0deg)';
+      }
+    });
+  });
+
+  // Load More functionality
+  const loadMoreBtn = document.querySelector('.load-more-btn');
+  let postCount = 6;
+
+  loadMoreBtn.addEventListener('click', () => {
+    loadMoreBtn.innerHTML = '<i class="fas fa-spinner loading-icon spinning"></i><span>Loading...</span>';
+
+    setTimeout(() => {
+      // Simulate loading more posts
+      loadMoreBtn.innerHTML = '<span>Load More Posts</span><i class="fas fa-spinner loading-icon"></i>';
+      // In a real implementation, you would fetch more posts here
+    }, 2000);
+  });
+
+  // Newsletter subscription
+  const newsletterBtn = document.querySelector('.newsletter-btn');
+  const newsletterInput = document.querySelector('.newsletter-input');
+
+  newsletterBtn.addEventListener('click', () => {
+    const email = newsletterInput.value.trim();
+    if (email) {
+      newsletterBtn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+      newsletterBtn.style.background = '#28a745';
+      newsletterInput.value = '';
+      setTimeout(() => {
+        newsletterBtn.innerHTML = 'Subscribe';
+        newsletterBtn.style.background = '';
+      }, 3000);
+    } else {
+      newsletterInput.style.borderColor = '#dc3545';
+      setTimeout(() => {
+        newsletterInput.style.borderColor = '';
+      }, 2000);
+    }
+  });
+
+  // Add scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.blog-card, .faq-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+});
+</script>
+
+
 
 </body>
 </html>
